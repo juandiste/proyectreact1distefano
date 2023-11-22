@@ -67,3 +67,15 @@ button:focus-visible {
   display: flex;
   justify-content: space-between;
 }
+.buttonitem{
+height: 50px;
+margin: 1%;
+}
+.divitem{
+display: flex;
+justify-content: center;
+}
+.buttoncar{
+  display: flex;
+  justify-content: center;
+}

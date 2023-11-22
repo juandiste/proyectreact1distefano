@@ -1,18 +1,21 @@
-import NavBar from "./componets/NavBar/NavBar"
-import ItenListContainer from "./componets/ItemListContainer/ItemListContainer"
+import NavBar from "./componets/NavBar/NavBar";
+import ItemListContainer from './componets/ItemListContainer/ItemListContainer';
+import ItemCount from './componets/ItemCount/ItemCount';
+
 
 
 
 function App() {
-  return <div> 
-
+  return (
+  <div>   
     <NavBar/>
-    <ItenListContainer greeting={"Bienvenidos"}/>
+    <ItemListContainer greeting={'bienvenidos'}/>
+    <ItemCount initial={1} stock={10} onAdd= {(quantity) => console.log('cantidad agregada',quantity)}/> 
+  </div> 
+   );
+  }
 
-
-
-  </div> }
-export default App
+export default App;
 
 
 
