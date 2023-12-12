@@ -1,17 +1,18 @@
-import NavBar from "./componets/NavBar/NavBar";
-import ItemListContainer from './componets/ItemListContainer/ItemListContainer';
-import ItemCount from './componets/ItemCount/ItemCount';
-
-
+import ItemCount from './componentes/itemCount';
+import NavBar from './componentes/navbar'
+import BasicGrid from './componentes/products';
 
 
 function App() {
-  return (
-  <div>   
+  return ( <div> 
+
     <NavBar/>
-    <ItemListContainer greeting={'bienvenidos'}/>
-    <ItemCount initial={1} stock={10} onAdd= {(quantity) => console.log('cantidad agregada',quantity)}/> 
-  </div> 
+    <ItemCount inicial={1} stock={10} onAdd={(quantity)=> console.log('cantidad agregada',quantity)}/>
+    <BasicGrid/>
+    
+    
+   </div> 
+   
    );
   }
 
