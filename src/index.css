@@ -50,3 +50,17 @@ body {
     height: 150%;
     width: 30%;
    }
+   .saludo{
+    text-align: center;
+   }
+ .carditem{
+  border: solid black;
+  height: 300px;
+  width: 300px;
+ }
+ .imagen{
+  border: solid black;
+  height: 150px;
+  width: 150px;
+  background-color: blueviolet;
+ }

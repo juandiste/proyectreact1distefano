@@ -11,6 +11,10 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import accounting from 'accounting';
 import { AddShoppingCart } from '@mui/icons-material';
+import ItemCount from './itemCount';
+
+
+
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -23,7 +27,7 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-export default function CardProduct() {
+export default function CardProduct () {
   const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
@@ -31,7 +35,7 @@ export default function CardProduct() {
   };
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 400 }}>
       <CardHeader
         action={
         <Typography variant='h5' color='textsecondary'> 
@@ -49,7 +53,7 @@ export default function CardProduct() {
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
-          in stock
+        <ItemCount className="buttoncontador" inicial={0} stock={10} onAdd={(quantity)=> console.log('cantidad agregada',quantity)}/>
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -78,10 +82,12 @@ export default function CardProduct() {
             
           </Typography>
           <Typography>
-
+          
           </Typography>
         </CardContent>
       </Collapse>
+      
     </Card>
+   
   );
 }

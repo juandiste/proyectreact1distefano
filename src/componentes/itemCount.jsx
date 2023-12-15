@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
 
 
-const ItemCount = ({stock, inicial, onAdd})=> {
+const ItemCount  = ({stock, inicial, onAdd})=> {
     const [quantity,setQuantity] =useState(inicial)
 
     const increment = () => {

@@ -1,14 +1,18 @@
 import ItemCount from './componentes/itemCount';
 import NavBar from './componentes/navbar'
 import BasicGrid from './componentes/products';
+import ItemListContainer from './componentes/ItemListContainer';
 
 
 function App() {
   return ( <div> 
-
+    
+    
     <NavBar/>
-    <ItemCount inicial={1} stock={10} onAdd={(quantity)=> console.log('cantidad agregada',quantity)}/>
+    <ItemListContainer greeting={"bienvenidos"}/>
     <BasicGrid/>
+    
+   
     
     
    </div> 
